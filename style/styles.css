@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #131313;
+}
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+/* header styles here */
+.header {
+    background-color: rgba(255, 144, 14, 0.10);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.logo {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.menu li {
+    margin-left: 40px;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
