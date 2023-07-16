@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -38,6 +39,7 @@ li {
 .header {
     background-color: rgba(255, 144, 14, 0.10);
     padding-bottom: 50px;
+
 }
 
 .nav {
@@ -90,25 +92,30 @@ li {
 
 /* main seection here */
 
-.our-team-container {
-    margin: 100px 0px;
-    display: flex;
-    align-items: center;
-    gap: 80px;
-}
-
 .team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    width: 100%;
 }
-.team-img-container img{
-    width: auto;
-    height: 100%;
+
+.team-img-container img {
+    width: 100%;
+    height: auto;
 }
-.team-text{
+.our-team-container {
+    margin: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+}
+
+.team-text {
     width: 80%;
 }
+
 .team-text-title {
     color: #131313;
     font-size: 45px;
@@ -136,61 +143,62 @@ li {
     margin: 24px 0px 32px;
 }
 
-
+.hide{
+    display: none;
+}
 
 
 /* responsive media query start here */
 /* mobile device */
 @media screen and (max-width:576px) {
-    
+
     .header,
-    .main
-     {
-        padding: 0px 20px;
+    main
+   
+    {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .nav,
-    .menu,
     .our-team-container
-     {
+    {
         flex-direction: column;
     }
 
-    .team-img-container{
-        grid-template-columns:repeat(1,1fr);
-    }
-    .our-team-container{
-        justify-content: center;
-    }
-    .team-text{
-        margin: auto;
-    }
-    
     .bannar-text {
         width: 100%;
         margin: 0;
     }
 
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .team-text-container{
+        align-items: center;
+    }
+    .team-text{
+        width: 90%;
+    }
 }
 
 /* medium devise and tablet responsiv */
 
 @media screen and (min-width:577px) and (max-width:991px) {
     .header,
-    .main
+    main
      {
-        padding: 0px 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .nav,
-    .menu,
     .our-team-container
-    {
+     {
         flex-direction: column;
     }
-    .team-img-container{
-        grid-template-columns:repeat(2,1fr);
-    }
+
     .bannar-text {
         width: 100%;
         margin: 0;
@@ -200,8 +208,11 @@ li {
 /* large devise */
 
 @media screen and (min-width:992px) and (max-width:1440px) {
-    .header {
-        padding: 0 100px;
+    .header,
+    main
+    {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .bannar-text {
