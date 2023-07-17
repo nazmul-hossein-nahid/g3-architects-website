@@ -101,13 +101,12 @@ li {
 
 .team-img-container img {
     width: 100%;
-    height: auto;
 }
 .our-team-container {
     margin: 100px 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 80px;
     width: 100%;
 }
@@ -207,7 +206,7 @@ li {
 
 /* large devise */
 
-@media screen and (min-width:992px) and (max-width:1440px) {
+@media screen and (min-width:992px) and (max-width:1500px) {
     .header,
     main
     {
